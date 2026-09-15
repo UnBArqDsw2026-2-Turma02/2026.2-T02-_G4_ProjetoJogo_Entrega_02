@@ -102,24 +102,6 @@
 
 </div>
 
-## Links Rápidos
-
-<div class="quick-links">
-  <section class="quick-link-group">
-    <h3>Relatórios</h3>
-    <a href="/Base/Relatórios/1.1.1.SubEquipe_01.md">Relatório da SubEquipe 1</a>
-    <a href="/Base/Relatórios/1.1.2.SubEquipe_02.md">Relatório da SubEquipe 2</a>
-    <a href="/Base/Relatórios/1.1.3.SubEquipe_03.md">Relatório da SubEquipe 3</a>
-  </section>
-
-  <section class="quick-link-group">
-    <h3>Evidências</h3>
-    <a href="/Base/Evidências/1.1.1.SubEquipe_01.md">Evidências da SubEquipe 1</a>
-    <a href="/Base/Evidências/1.1.2.SubEquipe_02.md">Evidências da SubEquipe 2</a>
-    <a href="/Base/Evidências/1.1.3.SubEquipe_03.md">Evidências da SubEquipe 3</a>
-  </section>
-</div>
-
 <style>
   .home-hero {
     display: grid;
