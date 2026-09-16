@@ -31,17 +31,17 @@
         <span>241010914</span>
         <small>@artmendess</small>
       </a>
-      <a class="member-card" href="https://github.com/jvopBR" target="_blank">
-        <img src="https://github.com/jvopBR.png?size=140" alt="Foto de João Vitor Mendonça Merlin">
-        <strong>João Vitor Mendonça Merlin</strong>
-        <span>222006848</span>
-        <small>@jvopBR</small>
+      <a class="member-card" href="https://github.com/lopes061" target="_blank">
+        <img src="https://github.com/lopes061.png?size=140" alt="Foto de Enzo Lopes Ferreira">
+        <strong>Enzo Lopes Ferreira</strong>
+        <span>232002000</span>
+        <small>@lopes061</small>
       </a>
-      <a class="member-card" href="https://github.com/auslogyc" target="_blank">
-        <img src="https://github.com/auslogyc.png?size=140" alt="Foto de Danilo Sarmento Barros">
-        <strong>Danilo Sarmento Barros</strong>
-        <span>222008468</span>
-        <small>@auslogyc</small>
+      <a class="member-card" href="https://github.com/guin409" target="_blank">
+        <img src="https://github.com/guin409.png?size=140" alt="Foto de Guilherme Negreiros Pereira">
+        <strong>Guilherme Negreiros Pereira</strong>
+        <span>232014001</span>
+        <small>@guin409</small>
       </a>
     </div>
   </section>
@@ -55,17 +55,23 @@
         <span>200014226</span>
         <small>@luabrantess</small>
       </a>
-      <a class="member-card" href="https://github.com/lopes061" target="_blank">
-        <img src="https://github.com/lopes061.png?size=140" alt="Foto de Enzo Lopes Ferreira">
-        <strong>Enzo Lopes Ferreira</strong>
-        <span>232002000</span>
-        <small>@lopes061</small>
-      </a>
       <a class="member-card" href="https://github.com/Pabloo8" target="_blank">
         <img src="https://github.com/Pabloo8.png?size=140" alt="Foto de Pablo Cunha de Jesus">
         <strong>Pablo Cunha de Jesus</strong>
         <span>222014910</span>
         <small>@Pabloo8</small>
+      </a>
+      <a class="member-card" href="https://github.com/jvopBR" target="_blank">
+        <img src="https://github.com/jvopBR.png?size=140" alt="Foto de João Vitor Mendonça Merlin">
+        <strong>João Vitor Mendonça Merlin</strong>
+        <span>222006848</span>
+        <small>@jvopBR</small>
+      </a>
+      <a class="member-card" href="https://github.com/auslogyc" target="_blank">
+        <img src="https://github.com/auslogyc.png?size=140" alt="Foto de Danilo Sarmento Barros">
+        <strong>Danilo Sarmento Barros</strong>
+        <span>222008468</span>
+        <small>@auslogyc</small>
       </a>
     </div>
   </section>
@@ -90,12 +96,6 @@
         <strong>Weverton Rodrigues da Costa Silva</strong>
         <span>221022767</span>
         <small>@vevetin</small>
-      </a>
-      <a class="member-card" href="https://github.com/guin409" target="_blank">
-        <img src="https://github.com/guin409.png?size=140" alt="Foto de Guilherme Negreiros Pereira">
-        <strong>Guilherme Negreiros Pereira</strong>
-        <span>232014001</span>
-        <small>@guin409</small>
       </a>
     </div>
   </section>
