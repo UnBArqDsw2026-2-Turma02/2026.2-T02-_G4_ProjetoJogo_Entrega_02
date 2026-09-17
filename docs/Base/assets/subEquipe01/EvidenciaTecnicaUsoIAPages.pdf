@@ -1,0 +1,359 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 3262 >>
+stream
+BT
+/F1 10 Tf
+72 770 Td
+/F1 13 Tf
+0 -5 Td
+(Evidencia Tecnica - Uso de IA na Criacao e Estruturacao do Pages) Tj
+0 -15 Td
+/F1 10 Tf
+(Projeto: G4 - Projeto Jogo) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Entrega: Entrega 02 - Desenho de Software \(Modelagem\)) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Artefato relacionado: GitHub Pages, evidencias, atas, participacoes e rastreabilidade) Tj
+0 -15 Td
+/F1 10 Tf
+(documental) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Responsaveis registrados: Arthur Mendes Borges e Guilherme Negreiros Pereira) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 13 Tf
+0 -5 Td
+(1. Objetivo da evidencia) Tj
+0 -15 Td
+/F1 10 Tf
+(Este documento registra, de forma tecnica e rastreavel, como a IA Generativa foi) Tj
+0 -15 Td
+/F1 10 Tf
+(utilizada como apoio na criacao, estruturacao e elaboracao do GitHub Pages da Entrega) Tj
+0 -15 Td
+/F1 10 Tf
+(02.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(O objetivo nao e substituir a autoria humana, mas evidenciar o uso da ferramenta como) Tj
+0 -15 Td
+/F1 10 Tf
+(apoio metodologico para organizar informacoes, revisar padroes, melhorar a redacao) Tj
+0 -15 Td
+/F1 10 Tf
+(academica e manter consistencia entre paginas, evidencias, atas e participacoes.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 13 Tf
+0 -5 Td
+(2. Escopo de uso da IA) Tj
+0 -15 Td
+/F1 10 Tf
+(A IA foi utilizada principalmente na etapa de documentacao do Pages, envolvendo leitura) Tj
+0 -15 Td
+/F1 10 Tf
+(da estrutura existente, identificacao do padrao de tabelas, verificacao de paginas por) Tj
+0 -15 Td
+/F1 10 Tf
+(subequipe, elaboracao de textos de ata e apoio na organizacao de evidencias.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(O uso ocorreu sobre materiais ja existentes no repositorio, como paginas de relatorios,) Tj
+0 -15 Td
+/F1 10 Tf
+(evidencias, participacoes, sidebar, estilos e conteudos da home. A IA tambem apoiou a) Tj
+0 -15 Td
+/F1 10 Tf
+(identificacao de quais participantes pertenciam a cada subequipe antes de registrar) Tj
+0 -15 Td
+/F1 10 Tf
+(participacoes na reuniao geral.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 13 Tf
+0 -5 Td
+(3. Procedimento tecnico adotado) Tj
+0 -15 Td
+/F1 10 Tf
+(Primeiro foi realizada uma inspecao da arvore de arquivos do projeto, com foco na pasta) Tj
+0 -15 Td
+/F1 10 Tf
+(docs/Base e nas paginas de Evidencias, Relatorios e Participacoes da Entrega 02.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Depois foram comparados os padroes existentes de reuniao, gravacao, ata, evidencias de) Tj
+0 -15 Td
+/F1 10 Tf
+(artefatos e versionamentos. A partir disso, a IA auxiliou a produzir alteracoes) Tj
+0 -15 Td
+/F1 10 Tf
+(compatíveis com o formato ja adotado no Pages, evitando criar uma estrutura paralela.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Na etapa de integracao, o conteudo foi distribuido nas tabelas ja existentes, mantendo) Tj
+0 -15 Td
+/F1 10 Tf
+(links relativos compativeis com Docsify e preservando o mesmo padrao visual de pop-up) Tj
+0 -15 Td
+/F1 10 Tf
+(utilizado na ata anterior da SubEquipe_01.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 13 Tf
+0 -5 Td
+(4. Apoio na redacao e estruturacao) Tj
+0 -15 Td
+/F1 10 Tf
+(A IA auxiliou na transformacao de informacoes soltas em textos academicos mais) Tj
+0 -15 Td
+/F1 10 Tf
+(objetivos, especialmente nas descricoes de evidencias, no resumo da reuniao, nos campos) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Length 3217 >>
+stream
+BT
+/F1 10 Tf
+72 770 Td
+/F1 10 Tf
+(de decisoes, pendencias e encaminhamentos, e nas contribuicoes individuais registradas) Tj
+0 -15 Td
+/F1 10 Tf
+(na pagina de participacoes.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Tambem foi utilizada para padronizar vocabulario, reduzir repeticoes, preservar tom) Tj
+0 -15 Td
+/F1 10 Tf
+(formal e diferenciar claramente assuntos discutidos, propostas levantadas, decisoes) Tj
+0 -15 Td
+/F1 10 Tf
+(identificadas e pontos ainda em aberto.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 13 Tf
+0 -5 Td
+(5. Apoio na rastreabilidade) Tj
+0 -15 Td
+/F1 10 Tf
+(Um dos principais usos da IA foi apoiar a rastreabilidade entre video, ata, paginas de) Tj
+0 -15 Td
+/F1 10 Tf
+(evidencia, pagina de participacoes e relatorios de subequipe.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(A ferramenta ajudou a verificar a intersecao entre participantes gerais da reuniao e) Tj
+0 -15 Td
+/F1 10 Tf
+(membros de cada subequipe. Com isso, Arthur, Enzo e Guilherme foram associados a) Tj
+0 -15 Td
+/F1 10 Tf
+(SubEquipe_01; Danilo foi associado a SubEquipe_02; Gabriel, Eduardo e Weverton foram) Tj
+0 -15 Td
+/F1 10 Tf
+(associados a SubEquipe_03.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Esse procedimento evitou registrar todos os participantes em todas as subequipes,) Tj
+0 -15 Td
+/F1 10 Tf
+(preservando a coerencia do Pages e a responsabilidade documental de cada grupo.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 13 Tf
+0 -5 Td
+(6. Uso de senso critico) Tj
+0 -15 Td
+/F1 10 Tf
+(As respostas da IA nao foram aceitas automaticamente. Cada sugestao foi confrontada com) Tj
+0 -15 Td
+/F1 10 Tf
+(os arquivos reais do projeto e com o padrao visual ja existente.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Quando nao havia transcricao completa da reuniao no repositorio, a ata foi redigida de) Tj
+0 -15 Td
+/F1 10 Tf
+(forma conservadora. Pontos sem confirmacao foram marcados como discussoes, propostas ou) Tj
+0 -15 Td
+/F1 10 Tf
+(pendencias, sem serem tratados como decisoes definitivas.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Tambem foram evitadas atribuicoes individuais especificas que nao pudessem ser) Tj
+0 -15 Td
+/F1 10 Tf
+(comprovadas. As contribuicoes registradas descrevem participacao coletiva na reuniao e) Tj
+0 -15 Td
+/F1 10 Tf
+(nos topicos discutidos.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 13 Tf
+0 -5 Td
+(7. Limitacoes identificadas) Tj
+0 -15 Td
+/F1 10 Tf
+(A principal limitacao foi a ausencia da transcricao completa da reuniao nos arquivos do) Tj
+0 -15 Td
+/F1 10 Tf
+(projeto. Por isso, a documentacao produzida dependeu do contexto fornecido, do link de) Tj
+0 -15 Td
+/F1 10 Tf
+(gravacao e dos registros existentes no Pages.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Outra limitacao foi a necessidade de preservar a estrutura do Docsify e os links) Tj
+0 -15 Td
+/F1 10 Tf
+(relativos. Isso exigiu revisao manual para garantir que os links para videos, atas e) Tj
+0 -15 Td
+/F1 10 Tf
+(secoes funcionassem corretamente no Pages.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(Por fim, a IA pode sugerir textos excessivamente assertivos. Por esse motivo, termos) Tj
+0 -15 Td
+/F1 10 Tf
+(como proposta, discussao, pendencia e decisao identificada foram usados de forma) Tj
+0 -15 Td
+/F1 10 Tf
+(controlada.) Tj
+0 -15 Td
+/F1 10 Tf
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 1242 >>
+stream
+BT
+/F1 10 Tf
+72 770 Td
+/F1 13 Tf
+0 -5 Td
+(8. Resultado produzido) Tj
+0 -15 Td
+/F1 10 Tf
+(Como resultado do apoio da IA e da revisao humana, foram adicionadas evidencias da) Tj
+0 -15 Td
+/F1 10 Tf
+(Reuniao de Alinhamento Geral dos Subgrupos, atas em pop-up nas paginas das subequipes,) Tj
+0 -15 Td
+/F1 10 Tf
+(registros de participacao filtrados por subequipe e links para os videos) Tj
+0 -15 Td
+/F1 10 Tf
+(correspondentes.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(O Pages passou a apresentar melhor rastreabilidade entre reuniao, ata, participantes e) Tj
+0 -15 Td
+/F1 10 Tf
+(evidencias, mantendo a organizacao visual ja utilizada na Entrega 02.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 13 Tf
+0 -5 Td
+(9. Conclusao) Tj
+0 -15 Td
+/F1 10 Tf
+(O uso da IA Generativa foi relevante para acelerar a organizacao documental e melhorar a) Tj
+0 -15 Td
+/F1 10 Tf
+(consistencia textual do Pages, mas exigiu verificacao humana constante.) Tj
+0 -15 Td
+/F1 10 Tf
+0 -15 Td
+/F1 10 Tf
+(A contribuicao da IA foi mais efetiva quando usada como ferramenta de apoio a analise,) Tj
+0 -15 Td
+/F1 10 Tf
+(padronizacao e escrita tecnica, sempre subordinada aos dados reais do repositorio e as) Tj
+0 -15 Td
+/F1 10 Tf
+(decisoes registradas pela equipe.) Tj
+0 -15 Td
+/F1 10 Tf
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Type /Pages /Kids [ 3 0 R 5 0 R 7 0 R ] /Count 3 >>
+endobj
+9 0 obj
+<< /Type /Catalog /Pages 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000003393 00000 n 
+0000003519 00000 n 
+0000006788 00000 n 
+0000006914 00000 n 
+0000008208 00000 n 
+0000008334 00000 n 
+0000008405 00000 n 
+trailer
+<< /Size 10 /Root 9 0 R >>
+startxref
+8454
+%%EOF
