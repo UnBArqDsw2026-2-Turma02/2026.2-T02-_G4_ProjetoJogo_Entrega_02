@@ -1,0 +1,142 @@
+@startuml diagrama-classes
+  skinparam classAttributeIconSize 0
+  skinparam monochrome false
+  skinparam shadowing true
+  skinparam packageStyle rectangle
+  skinparam linetype ortho
+  skinparam nodesep 110 
+  skinparam ranksep 140
+  title Diagrama de Classes - Aplicativo Pet Virtual & Produtividade 
+ 
+  enum CategoriaXP { 
+    INTELECTUAL 
+    SABEDORIA 
+    ZEN 
+    ATLETICO 
+    HIDRATACAO
+  }
+
+  enum FaseVidaPet {
+   BEBE 
+   CRIANCA 
+   ADOLESCENTE 
+   ADULTO 
+  }
+  enum DiaSemana {
+    SEGUNDA
+    TERCA 
+    QUARTA 
+    QUINTA 
+    SEXTA 
+    SABADO 
+    DOMINGO 
+  }
+  
+  class Usuario { 
+    - idUsuario : String 
+    - nomeExibicao : String 
+    - emailConta : String 
+    - sequenciaDiasConsecutivos : int 
+    + autenticarAcesso() : boolean
+    + atualizarSequenciaDiaria() : int 
+    + obterHistoricoDesempenho() : void 
+  }
+  
+  class PetVirtual { 
+    - nomePet : String 
+    - nivelEvolutivo : int 
+    - faseVidaAtual : FaseVidaPet 
+    - pesoGramas : int 
+    - pontosExperienciaCategorias : float[5] 
+    - experienciaTotal : float 
+    + acumularExperiencia(categoria: CategoriaXP, pontosXp: float) : void 
+    + avaliarEvolucaoPorAfinidade() : void 
+  }
+   
+  note right of PetVirtual::pontosExperienciaCategorias
+   Vetor estático de 5 posições (float) em que cada índice corresponde ao ordinal do enum CategoriaXP:
+    0 = INTELECTUAL 
+    1 = SABEDORIA 
+    2 = ZEN 
+    3 = ATLETICO 
+    4 = HIDRATACAO 
+  end note
+  
+   class SessaoPomodoro { 
+    - idSessao : String 
+    - tagCategoriaAtividade : CategoriaXP 
+    - numeroCicloAtual : int 
+    - dataHoraInicio : DateTime 
+    - dataHoraFim : DateTime 
+    - foiConcluidaComSucesso : boolean 
+    + iniciarCiclo() : void 
+    + pausarCiclo() : void 
+    + retomarCiclo() : void 
+    + verificarPausaLonga() : boolean 
+    + finalizarCicloComSucesso() : void 
+    + calcularRecompensaExperiencia() : float 
+  }
+  
+  class Habito { 
+    - idHabito : String 
+    - tituloHabito : String 
+    - categoria : CategoriaXP 
+    - sequenciaDiasStreak : int 
+    - dataUltimoCheckIn : Date 
+    - diasAtivosSemana : DiaSemana[1..7] 
+    - estaCongeladoHoje : boolean
+    - dataUltimoCongelamento : Date 
+    - diasCooldownCongelamento : int = 7 
+    + registrarCheckInDiario() : boolean 
+    + verificarQuebraDeStreak() : void 
+    + podeCongelarStreak() : boolean 
+    + acionarCongelamentoStreak() : boolean 
+    + calcularExperienciaGerada() : float 
+  }
+    
+  note bottom of Habito 
+    - diasAtivosSemana: permite dias de descanso sem quebrar a streak. 
+    - diasCooldownCongelamento = 7: impede uso seguido do congelamento. 
+  end note
+  
+  class ContagemDeAgua { 
+    - idRegistroAgua : String 
+    - metaDiariaMl : int 
+    - volumeConsumidoMl : int 
+    - dataRegistro : Date 
+    + registrarIngestaoAgua(volumeMl: int) : void 
+    + calcularPercentualAlcancado() : float 
+    + validarConclusaoMeta() : boolean 
+    + calcularExperienciaGerada() : float 
+    + reiniciarContadorDiario() : void 
+  } 
+    
+    class Conquista { 
+      - idConquista : String 
+      - tituloConquista : String 
+      - descricaoRequisito : String 
+      - pontosExperienciaRecompensa : float 
+      - foiDesbloqueada : boolean 
+      - dataDesbloqueio : Date 
+      + validarRequisitoGeral(usuario: Usuario) : boolean 
+      + concederRecompensa(pet: PetVirtual) : void 
+    } 
+
+  Usuario "1" *-- "1" PetVirtual 
+  Usuario "1" o-- "0..*" Habito 
+  Usuario "1" o-- "0..*" SessaoPomodoro 
+  Usuario "1" o-- "0..*" ContagemDeAgua 
+  Usuario "1" o-- "0..*" Conquista 
+     
+  PetVirtual --> FaseVidaPet 
+  PetVirtual ..> CategoriaXP
+  
+  Habito --> CategoriaXP 
+  Habito -up-> DiaSemana
+  
+  SessaoPomodoro --> CategoriaXP 
+  
+  Conquista ..> Usuario 
+  Conquista ..> PetVirtual 
+  
+@enduml
