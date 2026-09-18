@@ -1,0 +1,41 @@
+@startuml diagrama-estados-habito
+
+title Diagrama de Estados - Ciclo de Vida da Classe Habito
+
+skinparam linetype ortho
+skinparam nodesep 120
+skinparam ranksep 100
+
+' Estados
+state "Aguardando realização pelo usuário" as AguardandoRealizacao
+state "Aguardando virada do dia com meta cumprida" as AguardandoVirada
+state "Preservando streak com congelamento" as PreservandoStreak
+state "Reiniciando contagem de streak" as ReiniciandoStreak
+state "Permanecendo pausado e arquivado" as PermanecendoArquivado
+
+' Pseudo-estado de escolha (Gateway de decisão na virada do dia)
+state choice_streak <<choice>>
+
+' Transição Inicial (Executada uma única vez na criação do hábito)
+[*] --> AguardandoRealizacao : cadastrar hábito / iniciar streak
+
+' Fluxo Principal de Cumprimento Diário
+AguardandoRealizacao --> AguardandoVirada : meta cumprida / marcarMetaCumprida()\nnotificarInterfaceSucesso()
+
+' Virada do Dia sem cumprimento -> Direciona ao Gateway
+AguardandoRealizacao --> choice_streak : meia-noite / verificarStatusDiario()
+
+' Saídas do Gateway (Condição de Guarda e Ações Imediatas)
+choice_streak --> PreservandoStreak : [streak freeze disponível] / deduzirItemStreakFreeze()\nregistrarUsoCongelamento()
+choice_streak --> ReiniciandoStreak : [else] / zerarStreak()\nexibirNotificacaoQuebraStreak()
+
+' Transições de Retorno para o Novo Dia
+PreservandoStreak --> AguardandoRealizacao : novo dia / carregarDadosHabito()
+ReiniciandoStreak --> AguardandoRealizacao : novo dia / carregarDadosHabito()
+AguardandoVirada --> AguardandoRealizacao : novo dia / incrementarStreak()\ncarregarDadosHabito()
+
+' Gestão: Arquivamento e Reativação
+AguardandoRealizacao --> PermanecendoArquivado : hábito pausado / desativarNotificacoesDiarias()
+PermanecendoArquivado --> AguardandoRealizacao : hábito reativado / reativarNotificacoesDiarias()
+
+@enduml
