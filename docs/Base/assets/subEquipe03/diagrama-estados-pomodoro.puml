@@ -1,0 +1,55 @@
+@startuml diagrama-estados-Pomodoro
+skinparam classAttributeIconSize 0
+ skinparam monochrome false 
+ skinparam shadowing true 
+ skinparam packageStyle rectangle 
+ skinparam linetype ortho 
+ skinparam nodesep 110 
+ skinparam ranksep 140 
+ skinparam state { 
+  StartColor #2C3E50 
+  EndColor #2C3E50 
+  BackgroundColor #F8F9F9 
+  BorderColor #2980B9 
+  FontName Arial 
+  FontSize 12 
+  } 
+  
+  title Diagrama de Estados - Ciclo de Vida da Sessão Pomodoro 
+  
+   [*] --> Criada : Criar sessão de foco [com tag de categoria] 
+   
+    state Criada { 
+      Criada : entry / Carregar duração configurada do ciclo 
+    } 
+      
+      Criada --> EmExecucao : Iniciar ciclo de foco / Registrar data e hora de início 
+      state EmExecucao { 
+        EmExecucao : do / Decrementar temporizador a cada segundo 
+      } 
+      
+      EmExecucao --> Pausada : Pausar ciclo / Parar contagem do tempo 
+      
+      state Pausada { 
+        Pausada : do / Aguardar ação do usuário 
+      } 
+      
+      Pausada --> EmExecucao : Retomar ciclo / Reativar contagem do tempo 
+      
+      EmExecucao --> Concluida : Tempo esgotado [tempo restante == 0] / Concluir ciclo com sucesso 
+      EmExecucao --> Cancelada : Desistir da sessão / Registrar desistência no histórico 
+      Pausada --> Cancelada : Desistir da sessão / Registrar desistência no histórico 
+      
+      state Concluida {
+         Concluida : entry / Marcar sessão como concluída com sucesso 
+         Concluida : entry / Creditar 50 pontos de XP ao pet na categoria da tag 
+      } 
+      
+      state Cancelada {
+         Cancelada : entry / Marcar sessão como não concluída Cancelada : entry / Descartar pontos e progresso do ciclo 
+      } 
+      
+      Concluida --> [*] 
+      Cancelada --> [*] 
+      
+@enduml
