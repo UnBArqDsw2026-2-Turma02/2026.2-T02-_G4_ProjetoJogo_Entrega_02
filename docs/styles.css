@@ -425,3 +425,188 @@ body {
     padding: 22px 18px;
   }
 }
+
+/* ============================================================
+   Figuras de diagramas (artefatos UML)
+   ============================================================ */
+
+.diagram-figure {
+  position: relative;
+  margin: 28px 0 38px;
+  padding: 16px;
+  border: 1px solid var(--ads-border);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f9fc 100%);
+  box-shadow: var(--ads-shadow);
+}
+
+/* parágrafo que o docsify cria em volta da imagem */
+.diagram-figure > p {
+  margin: 0;
+  line-height: 0;
+}
+
+.diagram-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 14px;
+  border: 1px solid #e6ecf3;
+  border-radius: 10px;
+  background: #ffffff;
+  cursor: zoom-in;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.diagram-figure:hover img {
+  border-color: #8fc7ad;
+  box-shadow: 0 12px 26px rgba(23, 32, 51, 0.10);
+}
+
+.diagram-figure::after {
+  content: "Clique no diagrama para ampliar";
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  padding: 5px 11px;
+  border: 1px solid #d7e5dc;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--ads-accent-strong);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease;
+}
+
+.diagram-figure:hover::after {
+  opacity: 1;
+}
+
+.diagram-caption {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed #dde5ee;
+  text-align: center;
+}
+
+.diagram-caption p {
+  margin: 4px 0;
+  color: var(--ads-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.diagram-caption b {
+  color: var(--ads-text);
+}
+
+.diagram-caption a {
+  color: var(--ads-accent-strong);
+  font-weight: 700;
+}
+
+.diagram-caption code {
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: var(--ads-accent-soft);
+  color: var(--ads-accent-strong);
+  font-size: 13px;
+}
+
+.uml-legend-title {
+  display: inline-block;
+  margin: 26px 0 -6px !important;
+  padding: 6px 12px;
+  border: 1px solid #d7e5dc;
+  border-radius: 999px;
+  background: var(--ads-accent-soft);
+  color: var(--ads-accent-strong) !important;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* nomes de métodos longos em tabelas quebram linha em vez de estourar a coluna */
+.markdown-section td code {
+  overflow-wrap: anywhere;
+}
+
+/* diagramas largos ganham espaço extra em telas grandes */
+@media (min-width: 1400px) {
+  .diagram-figure {
+    left: 50%;
+    width: min(1400px, calc(100vw - 384px));
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .diagram-figure {
+    padding: 10px;
+  }
+
+  .diagram-figure img {
+    padding: 8px;
+  }
+
+  .diagram-figure::after {
+    display: none;
+  }
+
+  .diagram-caption p {
+    font-size: 13px;
+  }
+}
+
+/* evidências de produção: código-fonte recolhível */
+.code-evidence {
+  margin: 16px 0 38px;
+  overflow: hidden;
+  border: 1px solid var(--ads-border);
+  border-radius: 10px;
+  background: var(--ads-surface);
+  box-shadow: 0 8px 22px rgba(23, 32, 51, 0.05);
+}
+
+.code-evidence > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  color: var(--ads-accent-strong);
+  cursor: pointer;
+  font-weight: 800;
+  list-style: none;
+}
+
+.code-evidence > summary::-webkit-details-marker {
+  display: none;
+}
+
+.code-evidence > summary::before {
+  content: "▸";
+  transition: transform 160ms ease;
+}
+
+.code-evidence[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.code-evidence[open] > summary {
+  border-bottom: 1px solid var(--ads-border);
+}
+
+.code-evidence > summary:hover {
+  background: var(--ads-accent-soft);
+}
+
+.markdown-section .code-evidence pre {
+  margin: 0;
+  border-radius: 0;
+}
